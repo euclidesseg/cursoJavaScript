@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 80%;
+    height: 80%;
+}
+.title{
+    font-family: Arial;
+    font-weight: 600;
+    margin-bottom: 25px;
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+  color: transparent;  
+  text-align: center;
+}
+.paragraph{
+    font-size: 2rem;
+    background-image: linear-gradient(red, rgb(92, 92, 160), #fff);
+    padding: 20px 20px;
+    border-radius: 10px;
+}

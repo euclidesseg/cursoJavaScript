@@ -1,0 +1,2 @@
+/* Estaremos viendo la forma de como pasar o mover JavasCript a su propio archivo*/
+alert("Hola mundo")
