@@ -3,7 +3,7 @@
 /* CADEENAS DE TEXTO PRIMITIVAS*/
 const producto1 = "monitor de 20 pulgadas";
 const producto2 = String("monitor de 24 \"");//si no le pusiera la diagonal invertida me da error 
-                                                    // eso se conoce como escapar las pulgadas
+                                                    // eso se conoce como escapar las comillas
 const producto3 = new String('monitor de 27 pulgadas');
 
 console.log(producto1);

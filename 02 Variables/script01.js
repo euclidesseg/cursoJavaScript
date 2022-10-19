@@ -2,8 +2,11 @@
 var producto = " Monitor de 25 pulgadas";
 console.log(producto);
 
-/* las variables en java tambien se pueden reacigar o cambiar el valor mas adelante */
+/* las variables var en javascript tambien se pueden reacigar o cambiar el valor mas adelante */
 producto = 'monitor de 19"'
+console.log(producto);
+ 
+var producto = "cd"
 console.log(producto);
 
 /* las variables en javascript pueden contener  de igual maner un numero y no dara ningua clase de error
@@ -17,7 +20,7 @@ disponible = false;
 
 //inicializar multiples variables 
 
-var catedoria = 'computador';
+var categoria = 'computador';
 var marca = "marca famosa";
 var calificacion = 5;
 

@@ -1,5 +1,5 @@
 
-// las variables hoy en da se crean mas que toso con let y const
+// las variables hoy en da se crean mas que todo con let y const
 // y es la mas recomendada 
 // las reglas son las mismas que usando var
 
@@ -19,3 +19,8 @@ console.log(producto);
 
 let precio = 45000;
 console.log(precio);
+
+// diferencia etre var let y const
+// Las variables var pueden ser modificadas y re-declaradas dentro de su ámbito;
+// las variables let pueden ser modificadas, pero no re-declaradas;
+// las variables const no pueden ser modificadas ni re-declaradas. 
