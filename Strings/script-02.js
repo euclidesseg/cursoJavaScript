@@ -11,6 +11,7 @@ console.log(producto2.length);
 // Este metodo me o me permite saber si sierta palabra existe dentro de una cadena de texto
 // Console.log(producto2.indexOf("24"))
 // si sale -1 significa que no lo encontro
+// .length es uno de los muy pocos metodos que usan parentecis ya que es una proppiedad
 
 
 // Este es mucho mas practico y util que lo que dira es falso o veradero
