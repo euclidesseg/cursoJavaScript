@@ -1,7 +1,6 @@
 NOTAS DE JAVASCRIPT 
 
 
-
 # CONSOLA DE JAVASCRIPT
 ======================
 podemos declarar variables en js desde la consola
