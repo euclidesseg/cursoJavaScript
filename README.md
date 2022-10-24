@@ -100,8 +100,8 @@ const producto2 = String("monitor de 24 \"");
    OBJETO MATH Y ALGUNAS FUNCIONES
    ================================
    // 1 Math.round(2.8)   = redondear un numero
-   // 2 Math.floor(2.9)   = redondear hacia abajo
    // 3 Math.ceil(2.9)    = redibear hacia arriba
+   // 2 Math.floor(2.9)   = redondear hacia abajo
    // 3 Math.sqrt(1600)   = raiz cuadrada
    // 4 Math.abs(-150)    = valor absoluto
    // 5 Math.pow(8,3)     = potenciacion

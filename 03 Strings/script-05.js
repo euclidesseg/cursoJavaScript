@@ -24,7 +24,7 @@ console.log(producto.slice(2, 1));
 // Alternativa a slice
 // Metodo .substring
 console.log(producto.substring(0, 8))
-// esta alternativa es mucho mas inteligente ya que esta si le pones un numero mayor al principio esta si se imprimira
+// esta alternativa es mucho mas inteligente ya que esta si le pones un numero mayor al principio si se imprimira
 console.log(producto.substring(2, 1))
 
 let usuario = `Euclides`
