@@ -110,3 +110,7 @@ const producto2 = String("monitor de 24 \"");
    <!-- =================PASAR DE STRING A NUMEROS================= -->
    // 1 Number.parseInt(numero1);    = De string a entero
    // 2 Number.parseFloat(numero1)  = De string a flotante 
+
+
+   OPERADORES
+   ================================================================================
