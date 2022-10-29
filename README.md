@@ -114,3 +114,26 @@ const producto2 = String("monitor de 24 \"");
 
    OPERADORES
    ================================================================================
+   //1. ==  comparador de igualdad normal
+   //2. ===  comparador de igualdad estricto
+   //3. !=  comparador diferenncia normal
+   //4. !==  comparador diferenncia estricto
+   //5. >    mayor que
+   //6. <    menor que 
+
+
+
+   OBJETOS
+   ================================================================================
+
+   // Los objetos son la pieza fundamental de javasctipt 
+   // Agrupan todo en una sola variable 
+   // las variables van dentro y se conocen como propiedad del objeto 
+   // Su sintaxis
+   // la svariables no se igualan con (=) si no con (:)
+
+    const objeto = {
+      propiedad1: "si",
+      propiedad2: "no"
+    }
+    console.log(objeto);
