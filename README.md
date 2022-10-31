@@ -137,3 +137,8 @@ const producto2 = String("monitor de 24 \"");
       propiedad2: "no"
     }
     console.log(objeto);
+
+
+    //Destructuring acceder propiedades y agregarlas a una variable
+      const{propiedad1, propiedad2} = producto;
+      console.log(propiedad1);
