@@ -1,4 +1,4 @@
-// En este capitulo estaremos viendo varios metodos tales como la dorma de reemplazar el texto de una cadena
+// En este capitulo estaremos viendo varios metodos tales como la forma de reemplazar el texto de una cadena
 
 const producto = (`Monitor de 20 pulgadas`);
 

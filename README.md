@@ -144,3 +144,9 @@ const producto2 = String("monitor de 24 \"");
       console.log(propiedad1);
 
    METODOS DE LOS OBJETOS
+   ========================
+
+   
+   Object.freeze(objeto); = No me permite modificar eliminar o agregar propiedades a un metodo se activa cuando hacemos uso de "use strict"
+   Object.seal(objeto);   = A diferensia de freeze no se pueden agregar ni eliminar propiedades, pero si se pueden modificar las existenes
+   const resultado2 = {...producto, ...medidas}; = Une dos objetos en una Variable
