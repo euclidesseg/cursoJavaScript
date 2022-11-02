@@ -23,7 +23,7 @@ const producto ={
 // console.log(informacion);
 // console.log(fabricacion);
 
-// si quiero traer una propiedad de de fabricacion hago lo siguiente
+// si quiero traer una propiedad de deL objeto fabricacion hago lo siguiente
 const{Nombre, precio,informacion, informacion:{fabricacion:{fecha}}} = producto;
 console.log(`Nombre    = ${Nombre}`);
 console.log(`Fecha-fab = ${fecha}`);

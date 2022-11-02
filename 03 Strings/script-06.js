@@ -10,7 +10,7 @@ console.log(` ${producto} ${texto} !!!`);
 
 // Si le paso a repeat un numero que no ees entero lo que hace es redondear ese numero 
 
-// Split para dividir un string
+// Split para dividir un string 
 const actividad = (`Estoy aprendiendo Javascript Moderno`);
 console.log(`${actividad}`.split(` `));
 // Le doy como parametro el espacio para que cada una de las palabras de la cadena me las separe por el espacio que tiene

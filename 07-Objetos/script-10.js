@@ -20,5 +20,6 @@ console.log(medidas);
 const resultado = Object.assign(producto, medidas);
 console.log(resultado);
 
+// Esta forma se conoce como el spread 
 const resultado2 = {...producto, ...medidas};
 console.log(resultado2);
