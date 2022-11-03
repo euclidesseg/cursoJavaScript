@@ -1,6 +1,7 @@
 
 // En este capitulo estaremos viendo lo que es la palabra this en javascript
-const Nombre = `Hoila`;
+// La palabra this se usa en funciones que estan dentro de objetos para hacer referencia a una propiedad del mismo objeto
+const Nombre = `Hola`;
 precio = 20;
 const producto ={
     Nombre: "robot",
@@ -17,6 +18,7 @@ const producto ={
         // Busca la propiedad dentro del objeto en que se declaro la funcion
     }
 }
+producto.mostrarinfo();
 
 const producto2 ={
     Nombre: "tablet",
@@ -27,5 +29,5 @@ const producto2 ={
         // se mantiene dentro de su ambito en el objeto declarado
     }
 }
-producto.mostrarinfo();
+
 producto2.mostrarinfo();
