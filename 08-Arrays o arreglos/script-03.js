@@ -1,6 +1,8 @@
 //  En este capitulo aprendemos como recorre un arreglo
 
 let meses = [`enero`, `febrero`, `marzo`, `abril`, [`mayo`, `junio`, `julio`, ]];
+
+// Recorriendo  un arreglo 
 for(let i = 0; i < meses.length; i++){
     console.log(meses[i]);
 }
