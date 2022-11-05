@@ -157,3 +157,8 @@ const producto2 = String("monitor de 24 \"");
  // Los arreglos sirven para agrupar elmentos del mismo tipo
  // la diferencia entre arreglo y objetos es: los arreglos tienen solo valores y se reconocen porque van entre corchetes
  // los objetos tienen propiedades y valores, se reconocen porque van entre llaves
+
+ METODOS DE LOS ARREGLOS 
+ =========================
+
+ // meses.push(`abril`) = Agregar al final de un array
