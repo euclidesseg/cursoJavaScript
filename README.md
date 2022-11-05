@@ -143,13 +143,15 @@ const producto2 = String("monitor de 24 \"");
  Object.freeze(objeto);    = No me permite modificar eliminar o agregar propiedades a un metodo se activa cuando hacemos uso de "use strict"
  Object.seal(objeto);      = A diferensia de freeze no se pueden agregar ni eliminar propiedades, pero si se pueden modificar las existenes
  const resultado2 = {...producto, ...medidas}; = Une dos objetos en una Variable
- // Me retorna las propiedades
- console.log(Object.keys(producto));
- // Me retorna los valores de las propiedades
- console.log(Object.values(producto));
- // Me retorna todo lo que tiene el objeto
- console.log(Object.entries(producto));
- delete producto.imgagen; = eliminar una propiedad de un objeto
+
+ console.log(Object.keys(producto));     = Me retorna las propiedades
+ console.log(Object.values(producto));   = Me retorna los valores de las propiedades
+ console.log(Object.entries(producto));  = Me retorna todo lo que tiene el objeto
+ delete producto.imgagen;                = eliminar una propiedad de un objeto
+
+ console.log(`El producto: ${this.Nombre} tiene un precio de: ${this.precio}`);   
+ = la palabra this se usa en funciones dentro de objetos para hacer referencia a una propiedad 
+
 
 
  ARRAYS O ARREGLOS
@@ -157,8 +159,10 @@ const producto2 = String("monitor de 24 \"");
  // Los arreglos sirven para agrupar elmentos del mismo tipo
  // la diferencia entre arreglo y objetos es: los arreglos tienen solo valores y se reconocen porque van entre corchetes
  // los objetos tienen propiedades y valores, se reconocen porque van entre llaves
+ // Les puedo agregar objetos tambien a los arreglos
 
  METODOS DE LOS ARREGLOS 
  =========================
 
- // meses.push(`abril`) = Agregar al final de un array
+ // meses.push(`abril`) = Agregar un elemento al final de un array
+ //meses.unshift(`primer mes`); = agreagar un elemento al inicio de un arreglo 

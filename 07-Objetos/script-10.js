@@ -1,5 +1,5 @@
 
-// En este capitulo estaremos visndo como unir dos objetos
+// En este capitulo estaremos viendo como unir dos objetos
 
 const producto ={
     Nombre: "robot",

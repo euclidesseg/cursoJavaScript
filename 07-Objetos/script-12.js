@@ -25,8 +25,9 @@ function Producto(nombre, precio, pais){
     this.largo = alto;
 
  }
-const producto2 = new Producto(`Monitor de 24 pulgadad`, 500,`china`);
+const producto2 = new Producto(`Monitor de 24 pulgadad`, 500,`china`); //creo un objeto de tipo de Producto y le envio los argumentos
 console.log(producto2);
+
 const producto3 = new Producto2(`15kg`, `150`,`80cm`);
 console.log(producto3);
 
