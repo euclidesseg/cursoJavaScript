@@ -178,3 +178,5 @@ const producto2 = String("monitor de 24 \"");
  // Las funciones  son una serie de procdedimientos o instrucciones  lineas de codigo que realizan una accion 
  // Permiten tener un codigo mas organizado y mas facil de leer son reutilizbles
  // existen dos formas de crear funciones en javascript una es declaracion de funcion y otra es exprecion de funcion.
+
+ // function saludar(nombre, apellido = `....`){}  = poner un parametro por default cuando no se recibe ningun argumento
