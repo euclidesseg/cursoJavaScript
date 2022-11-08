@@ -165,4 +165,16 @@ const producto2 = String("monitor de 24 \"");
  =========================
 
  // meses.push(`abril`) = Agregar un elemento al final de un array
- //meses.unshift(`primer mes`); = agreagar un elemento al inicio de un arreglo 
+ // meses.unshift(`primer mes`); = agreagar un elemento al inicio de un arreglo 
+ // En el capitulo 6 de arrays esta la informacion de como agregar elementos a un arreglo con spread operator
+ // carrito.pop();            =  eliminar el ultimo elemento de un arreglo
+ // carrito.shift();           =  eliminar el primer elemento de un arreglo
+ // carrito.splice(1,1);        = eliminar en cualquier posicion de un arreglo
+
+ let [, , tercer] = numeros;    = aplicar destructuring a arreglos numeros hace referencia al nombre del array
+
+ FUNCIONES 
+ =====================
+ // Las funciones  son una serie de procdedimientos o instrucciones  lineas de codigo que realizan una accion 
+ // Permiten tener un codigo mas organizado y mas facil de leer son reutilizbles
+ // existen dos formas de crear funciones en javascript una es declaracion de funcion y otra es exprecion de funcion.
