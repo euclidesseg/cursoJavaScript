@@ -19,7 +19,12 @@ let nuevoArreglo = carrito.map(function (producto) {
     return `${producto.nombre} - precio: ${producto.precio}`;
 
 })
+let nuevoArreglo2 = carrito.forEach(function (producto) {    // imprimira undefined porque foreach no permite retornar nada
+    return `${producto.nombre} - precio: ${producto.precio}`;
+
+})
 console.log(nuevoArreglo);
+console.log(nuevoArreglo2);
 
 // la sintaxis entre map y forEach es basicamente la misma 
-// la diferencia entre map y forEach es que .map crea un nuevo arreglo y forEach no
+// la diferencia entre map y forEach es que .map crea un nuevo arreglo y a su vez retorna  y forEach no
