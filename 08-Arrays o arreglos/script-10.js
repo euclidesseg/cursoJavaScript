@@ -15,7 +15,6 @@ carrito.forEach(function (producto) {
 
 })
 let nuevoArreglo = carrito.map(function (producto) {
-    // Debido a que estamos trallendo al tiempo cada objeto no es necesarioo tener la misma sintaxis que forlup
     return `${producto.nombre} - precio: ${producto.precio}`;
 
 })
@@ -23,8 +22,9 @@ let nuevoArreglo2 = carrito.forEach(function (producto) {    // imprimira undefi
     return `${producto.nombre} - precio: ${producto.precio}`;
 
 })
+
 console.log(nuevoArreglo);
 console.log(nuevoArreglo2);
 
 // la sintaxis entre map y forEach es basicamente la misma 
-// la diferencia entre map y forEach es que .map crea un nuevo arreglo y a su vez retorna  y forEach no
+// la diferencia entre map y forEach es que .map crea un nuevo arreglo  y forEach no

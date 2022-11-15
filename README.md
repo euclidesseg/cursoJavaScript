@@ -172,7 +172,7 @@ const producto2 = String("monitor de 24 \"");
  // carrito.splice(1,1);        = eliminar en cualquier posicion de un arreglo
 
  let [, , tercer] = numeros;    = aplicar destructuring a arreglos numeros hace referencia al nombre del array
-
+// Exsisten dos formas de iterar un arreglo que contenga objetos con forlup y con forEach en el capitulo 9 de arreglo se ven las dos formas
  FUNCIONES 
  =====================
  // Las funciones  son una serie de procdedimientos o instrucciones  lineas de codigo que realizan una accion 
@@ -180,3 +180,6 @@ const producto2 = String("monitor de 24 \"");
  // existen dos formas de crear funciones en javascript una es declaracion de funcion y otra es exprecion de funcion.
 
  // function saludar(nombre, apellido = `....`){}  = poner un parametro por default cuando no se recibe ningun argumento
+
+ ARROW FUNCTION
+ ======================
