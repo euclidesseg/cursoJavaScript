@@ -12,3 +12,8 @@ if(dineroEnBolsa >= costo){
 else{
     console.log(`No puede pagar`);
 }
+
+if(!targeta){
+    // de esta manera se niega un acondicion con el signo de esclamacion
+    console.log(`No es verdadero`)
+}
