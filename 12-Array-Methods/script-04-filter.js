@@ -14,7 +14,7 @@ resultado = carrito.filter((producto) =>
     producto.precio > 400
 
 )
-console.table(resultado);
+console.table(resultado);//me retorna unnuevo arrego con los elementos cuyo precio sea mayor a 400
 
 // una funcion normal
 resultado2 = carrito.filter(function(producto){

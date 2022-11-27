@@ -1,4 +1,5 @@
 // En este capitulo aprenderemos a usar map para iterar un arreglo
+// .map me crea un nuevo arreglo a partir de uno ya existente
 
 let carrito = [
     { nombre: `Monitor de 20 pulgadas`, precio: 500 },

@@ -196,3 +196,5 @@ const producto2 = String("monitor de 24 \"");
 //     tiene el valor de `Aprendiendo JavasCript y arrow function` y asi puedo hacer console.log(aprendiendo2);
 
 
+Array Methods
+=================================
