@@ -183,6 +183,8 @@ const producto2 = String("monitor de 24 \"");
 
  ARROW FUNCTION
  ======================
+
+ funcion de flecha
  let aprendiendo2 = () => `Aprendiendo JavasCript y arrow function`;
 
 // Lo que cambia en un arrow function
@@ -192,3 +194,5 @@ const producto2 = String("monitor de 24 \"");
 // 4.  Cuando solamente tengo una funcion con una linea las llaves {} ya no son necesarias asi que las puedo cortar
 // 5.  Cuando tienen una sola linea dan por implicito el return  es decir, ya esta retornando su valor entonces si se elimina el console.log
 //     tiene el valor de `Aprendiendo JavasCript y arrow function` y asi puedo hacer console.log(aprendiendo2);
+
+

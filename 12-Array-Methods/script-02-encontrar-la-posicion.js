@@ -1,4 +1,4 @@
-// En este video aprenderemos el metodo .fintIndex para encontrar la posicion de un elemento en un array
+// En este video aprenderemos el metodo .findIndex para encontrar la posicion de un elemento en un array
 // vamos a trabajar con el mismo arreglo ya que vamos a terner dos esenarios un arreglo de indices y un arreglo de objetos
 
 let meses = [`enero`, `febrero`, `marzo`, `abril`, `mayo`];
@@ -21,6 +21,14 @@ meses.forEach((mes, i) => {
 
 // En contrar el indice de abril
 let  indice = meses.findIndex((mes) =>{
-    mes === `abril`
+    return mes === `abril`
 })
 console.log(indice)
+
+
+// Encontrar un valor de un arreglo de objetos
+
+let indice2 = carrito.findIndex((producto) => {
+    return producto.precio === 700;
+});
+console.log(indice2)

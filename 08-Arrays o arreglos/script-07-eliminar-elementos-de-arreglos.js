@@ -35,7 +35,7 @@ console.table(carrito);
 // console.table(carrito);
 
 
-// Eliminando el ultimo elemento de un arreglo
+// Eliminando al inicio de un arreglo
 // carrito.shift();
 // console.table(carrito);
 

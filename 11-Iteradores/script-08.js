@@ -10,7 +10,7 @@ let automovil = {
 
 for(let propiedades in automovil){
     console.log(propiedades);
-    // Si quiero solo las propiedades
+    // Si quiero solo los valores
     console.log(`${automovil[propiedades]}`);
 }
 

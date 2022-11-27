@@ -1,5 +1,5 @@
 // En ester capitulo apreendemos a hacer destructuring de arreglo
-
+// Destructurin es desestructurar los valores de un objeo o elementos de un arreglo
 // destructuring de objetos
 const producto ={
     Nombre: "robot",
@@ -20,7 +20,7 @@ let numeros = [20, 30, 40, 50];
 let [, , tercer] = numeros;
 let [, second] = numeros;
 let [primero, segundo, ...siguientes] = numeros;
-// con esta segunda forma estamos adignando el primer y segunso elemento a una variable y el resto lo asignamos en otro objeto
+// con esta segunda forma estamos asignando el primer y segundo elemento a una variable y el resto lo asignamos en otro objeto
 console.log(primero);
 console.log(tercer);
 console.log(second);

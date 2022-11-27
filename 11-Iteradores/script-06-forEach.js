@@ -9,7 +9,7 @@ let pendientes = [`tarea`, `Comer`, `Proyecto`, `Estudiar javascript`];
 pendientes.forEach( (pendiente, indice) => {
     console.log(`${indice}: ${pendiente}`);
 
-    // Si le ponfogo otro parametro ese perteneceria al indice de cada elemento
+    // Si le pongo otro parametro ese perteneceria al indice de cada elemento
 })
 
 

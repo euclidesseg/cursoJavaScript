@@ -1,5 +1,5 @@
 // En este capitulo aprendemos a usar el iterador forOF
-// For ofitera sobre arreglo
+// For of itera sobre arreglo
 let pendientes = [`tarea`, `Comer`, `Proyecto`, `Estudiar javascript`];
 
 let carrito = [
