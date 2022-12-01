@@ -35,5 +35,6 @@ elemento = document.images;
 // para saber cuantas imagenes estamos uzando en nuestro proyecto
 elemento = document.scripts
 
-
+// Todo eso anterior me lo retorna de forma parecida a un arreglo pero en realidad 
+// reciben el nombre de htmlcollectiion y se pueden selecionar por el indice
 console.log(elemento);

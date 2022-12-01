@@ -198,3 +198,12 @@ const producto2 = String("monitor de 24 \"");
 
 Array Methods
 =================================
+
+
+
+
+
+
+DOM
+===============================
+getElementByClassName   =  Selecciona un elemento por clase
