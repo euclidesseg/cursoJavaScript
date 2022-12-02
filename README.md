@@ -206,4 +206,10 @@ Array Methods
 
 DOM
 ===============================
+todos los elementos que vallasmoa a seleccionar en html lo hacemos mediante la palabra 
+recervada document que se refiere al documento principal del html
 getElementByClassName   =  Selecciona un elemento por clase
+getElementById   =  Selecciona un elemento por id solo va a seleccionar uno y el primero que 
+encuentre
+
+get
