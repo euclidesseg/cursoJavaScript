@@ -6,7 +6,7 @@ let encabezado = document.querySelector(`.contenido-hero h1`);
 console.log(encabezado);
 
 // Acceder al texto del h1 
-console.log(encabezado.innerText); // si en el css visivility: hidden  no lo va a encontrar
+console.log(encabezado.innerText); // si en el css visivility: hidden no lo va a encontrar
 console.log(encabezado.textContent); // este si 
 // Esta forma tambien me trae los espacios en blanco que tenga el texto
 console.log(encabezado.innerHTML);
@@ -19,7 +19,7 @@ let encabezado2 = document.querySelector(`.contenido-hero h1`).textContent;
 console.log(encabezado2); // me trae directamente el contenido sin usar los metodos accesores
 
 // ahora puedo tambien modificar el contenido de la siguiente manera
-document.querySelector(`.contenido-hero h1`).textContent = `Un nuevo texto`;
+document.querySelector(`.contenido-hero h1`).textContent = `Modificado con query selector`;
 
 
 // aparte de modificar textos tambien puedo modificar imagenes

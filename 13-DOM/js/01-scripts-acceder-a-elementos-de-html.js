@@ -25,6 +25,9 @@ elemento = document.forms[0].method
 // accediento al metodo
 elemento = document.forms[0].classList;
 // accediendo a cada una de las clases del formulario
+// esto me devuelve un arreglo
+elemento = document.forms[0].className;
+// esto me devuelve un string
 elemento = document.forms[0].action;
 
 elemento = document.links;
