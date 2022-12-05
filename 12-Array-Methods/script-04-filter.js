@@ -9,22 +9,22 @@ let carrito = [
     { nombre: `consola de videojuegos`, precio: 900 }
 ]; 
 
-resultado = carrito.filter((producto) =>
-    // la siguiiente linea perteneceria a una conicion
+let resultado = carrito.filter((producto) =>
+    // la siguiiente linea perteneceria a una condicion
     producto.precio > 400
 
 )
 console.table(resultado);//me retorna unnuevo arrego con los elementos cuyo precio sea mayor a 400
 
 // una funcion normal
-resultado2 = carrito.filter(function(producto){
+let resultado2 = carrito.filter(function(producto){
    return producto.nombre === `consola de videojuegos`;
 })
 console.table(resultado2);
 
 // Como podemos ver tambien podemos aplicar includ para buscar solo una palabra
 // clave dentro del elemento del arreglo
-resultado3 = carrito.filter((producto) => {
+let resultado3 = carrito.filter((producto) => {
     return producto.nombre.includes(`45`) 
  })
  console.table(resultado3);
@@ -32,7 +32,7 @@ resultado3 = carrito.filter((producto) => {
 
 //  Ahora podemos sacar del arrego una palabra un elemento tal cual como 
 // sacar un producto de un carrito de compra
- resultado4 = carrito.filter((producto) => {
+ let resultado4 = carrito.filter((producto) => {
     return producto.nombre !== `tablet samsung` 
     // me retorna doto el array menos el de la condicion
  })
