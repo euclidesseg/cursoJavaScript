@@ -65,7 +65,7 @@ const busqueda = document.querySelector(`.busqueda`);
 // validar que un input tenga algo de informacion
 busqueda.addEventListener(`input`, (event) =>{
     if(event.target.value === ``){
-        console.log(`por favor escribe algo el input esta vacio`)
+        console.log(`por favor escribe algo, el input esta vacio`)
     }else{
         console.log(event.target.value);
         let palabra = event.target.value;
