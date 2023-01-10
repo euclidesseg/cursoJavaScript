@@ -6,6 +6,6 @@ let autenticado = true;
 let puedePagar = true;
 
 console.log(autenticado && puedePagar ? `si esta autenticado, puede pagar`: `No esta autenticado`);
-// La primera parte o condicion del if seria el digno de ?
+// La primera parte o condicion del if seria el signo de ?
 // el else serian los dos puntos y el codigo esta seguido de cada uno de ellos.
 // Tambien se puede dar el signo de or ||

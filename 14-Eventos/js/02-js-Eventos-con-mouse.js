@@ -15,7 +15,7 @@ nav.addEventListener(`mouseenter`, () => {
     nav.style.backgroundColor = `red`;
 });
 
-// mouseout para indicar cuando se quit a el mouse de el menu de navegacion
+// mouseout para indicar cuando se quita el mouse de el menu de navegacion
 
 nav.addEventListener(`mouseout`, () =>{
     console.log(`Saliendo del menu`);
