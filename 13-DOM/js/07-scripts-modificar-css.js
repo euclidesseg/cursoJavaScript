@@ -3,6 +3,7 @@
 
 let encabezado = document.querySelector(`.contenedor h1`);
 // mediante la palabra style puedo encontrar todas propiedades de estilos en javascript
+// console.log(event.target.style);
 
 // En java script para dar estilos es diferente a css ya que las palabras como background-color
 // se elimina el guion y la segunda palabra empieza con camelCase backgroundColor
