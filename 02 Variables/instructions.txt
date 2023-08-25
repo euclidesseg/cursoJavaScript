@@ -1,0 +1,12 @@
+
+   VARIABLES 
+================================================================================
+// diferencia etre var let y const
+// Las variables var pueden ser modificadas y re-declaradas dentro de su ámbito;
+// las variables let pueden ser modificadas, pero no re-declaradas;
+// las variables const no pueden ser modificadas ni re-declaradas, deben ser inicializadas. 
+
+// No puedo crear dos variables de igual nombre en un mismo nivel 
+// Es decir, si en un archivo HTML tengo enlazados dos archivos JS
+// y en ambos tengo la misma variable no me dejara ejecutar correctamente el código 
+

@@ -4,14 +4,14 @@ const producto = (`Monitor de 20 pulgadas`);
 
 // .replace para reemplazar
 console.log(producto);
-console.log(producto.replace(`pulgadas`,`"`));
+console.log(producto.replace(`pulgadas` , `"`));
 console.log(producto.replace(`Monitor de 20 pulgadas`,`Monitor Curvo de 20"`));
 
 // Y de esta  forma ya remplazamos los una palabra en la cadena este metodo es util cuando vamos a modificar en una
 // Base de datos 
 
 // .slice para cortar
-console.log(producto.slice(0, 8));
+console.log(producto.slice(0, 7));
 // Que me muestre o imprima solamente desde la letra 0 hasta la 8
 
 console.log(producto.slice(8));

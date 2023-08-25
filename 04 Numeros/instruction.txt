@@ -1,0 +1,21 @@
+NUMEROS
+ ================================================================================
+ // En javascript a todos los numeros se crean de la misma forma tanto enteros como flotantes o decimales
+    o negativos
+ // Operaciones una de las operaciones mas rara de JS y de cualquier lenguaej es el modulo 
+    en JS se representa con el signo %   y es equivalente al recisuo de una division es ideal para saber si una division 
+    es exsacta o inexsacta
+
+ OBJETO MATH Y ALGUNAS FUNCIONES
+ ================================
+ // 1 Math.round(2.8)   = redondear un numero
+ // 3 Math.ceil(2.9)    = redibear hacia arriba
+ // 2 Math.floor(2.9)   = redondear hacia abajo
+ // 3 Math.sqrt(1600)   = raiz cuadrada
+ // 4 Math.abs(-150)    = valor absoluto
+ // 5 Math.pow(8,3)     = potenciacion
+ // 6 Math.random() * 100) = ramdom 
+ 
+ <!-- =================PASAR DE STRING A NUMEROS================= -->
+ // 1 Number.parseInt(numero1);    = De string a entero
+ // 2 Number.parseFloat(numero1)  = De string a flotante 

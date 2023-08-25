@@ -1,0 +1,36 @@
+   STRING
+================================================================================
+const producto2 = String("monitor de 24 \"");
+// si no le pusiera la diagonal invertida me da error 
+// eso se conoce como escapar las comillas
+// const producto3 = new String('monitor de 27 pulgadas');
+   se conoce como crear un nuevo objeto de tipo strings
+
+// Unir una cadena de string al estilo ecmascript
+   console.log(`el producto ${producto} tiene un precio de $${precio} y esta en descuento`);  alt + 96
+
+// Exsisten dos metodos para separar o cortar strings en javascrip 
+   slice y substring la diferencia entre ambos es que substring acepta que el primer valor sea mayor y slice no 
+   por lo que substring tomara el primer valor y lo pasara al ultimo 
+
+// Tenemos un metodo que permite repetir una cadena de texto que se llama repeat
+   si le paso un numero que no es entero lo que hace es redondearlo al valor
+
+
+ ALGUNOS DE LOS METODOS PARA LOS STRING
+ ======================================
+ // 1 .length         = me permite saber vuantas letras tiene una cadena de texto
+ // 2 .includes(`criterio de busqueda`) = indica si es falso o verdadero que una palabra existe dentro de una cadena de texto
+ // 3 .concat()       = permite concatenar una cadena de texto con variables
+ // 4 .trimStart()    = permite eliminar espacios al inicio de la cadena de texto
+ // 5 .trimEnd()      = permite eliminar espacios al final de la caden ade texto
+ // 6 .trim()         = permite eliminar espacios tanto al inicio como al final de la cadena de texto
+ // 7 .replace(`pulgadas`,`"`);       = permite reemplazar una palabra de una cadena de texto o toda la cadena
+ // 8 .slice(0, 8);   = permite cortar una cadena de texto
+ // 9 .substring(0, 8)  = tambien permite cortar una cadena de texto "muestra lo que corta"
+ // 10 .repeat(3);    = permite repetir una cadena de texto un determinado numero de veces, se pone en la cadena no en el console
+ // 11 .split(` `)    = me retorna un arreglo luego de dividir una cadena de texto ya sea por 
+                        espacios o un carater, lo que indiquemos en las 
+                        
+ // 12 .toUpperCase() = permite pasar una cadena de texto a mayusculas
+ // 13 .toLoerCase()  = permite pasar una caden ade texto a minusculas
