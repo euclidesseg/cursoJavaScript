@@ -7,7 +7,7 @@ const profducto = `tv`
 const disponible = true;
 const precio = 20000; 
 
-// todo lo anterios no los ahorramos poniendo un objeto que tenga dentro las mismas variables propiedades
+// todo lo anterior no los ahorramos poniendo un objeto que tenga dentro las mismas propiedades
 
 const producto = {
     Nombre: "pc",

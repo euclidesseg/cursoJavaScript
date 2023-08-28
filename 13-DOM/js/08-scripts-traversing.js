@@ -18,7 +18,7 @@
 
 // //Exite otra forma alternativa para solucionar ese detalle 
 // console.log(navegacion.children); //Me lista elementos reales
-// console.log(navegacion.children[3]); //Me lista el elemento en la posicion 3
+// console.log(navegacion.children[3], navegacion.children[3].textContent); //Me lista el elemento en la posicion 3 y su texto
 
 
 // veamos un ejemplo con card que tine mas elementos
@@ -28,11 +28,12 @@ console.log(card.children[1].children);
 // con children es lo que me va a permitir hacerlo
 
 // Acceder al titulo del primer card con children y modificarlo
+console.log(card.children[1].children[1].textContent);
 card.children[1].children[1].textContent = `Musica vallenata desde traversing the DOM`
 console.log(card.children[1].children[1].textContent);
 
-// cambiar la imagen con traversing 
-card.children[0].src = `img/hacer4.jpg`
+// // cambiar la imagen con traversing 
+// card.children[0].src = `img/hacer4.jpg`
 
 
 
@@ -42,16 +43,16 @@ card.children[0].src = `img/hacer4.jpg`
 // traberding del hijo al padre
 
 // console.log(card.parentNode);
-console.log(card.parentElement.parentElement.parentElement);
+// console.log(card.parentElement.parentElement.parentElement);
 
-// Ahora veremos otra forma forma para acceder a elementos hermanos
+// // Ahora veremos otra forma forma para acceder a elementos hermanos
 
-console.log(card.nextElementSibling)// nos selecciona el segundo elemento
-console.log(card.nextElementSibling.nextElementSibling)// nos selecciona el segundo elemento
-// nextElementSibling va a ir al siguiente y al siguiente elemento del mismo nivel
+console.log(card.nextElementSibling.textContent)// nos selecciona el segundo elemento
+// console.log(card.nextElementSibling.nextElementSibling)// nos selecciona el segundo elemento
+// // nextElementSibling va a ir al siguiente y al siguiente elemento del mismo nivel
 
 
-// de esta forma tomamos el ultimo card
- let ultimoCard = document.querySelector(`.card:nth-child(4)`)
- console.log(ultimoCard.previousElementSibling); // previousElementSibling se regresa
-                                                 // un elemento antes
+// // de esta forma tomamos el ultimo card
+//  let ultimoCard = document.querySelector(`.card:nth-child(4)`)
+//  console.log(ultimoCard.previousElementSibling); // previousElementSibling se regresa
+//                                                  // un elemento antes

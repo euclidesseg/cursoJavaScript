@@ -6,7 +6,7 @@ let encabezado = document.querySelector(`.contenido-hero h1`);
 console.log(encabezado);
 
 // Acceder al texto del h1 
-console.log(encabezado.innerText); // si en el css visivility: hidden no lo va a encontrar
+console.log(encabezado.innerText); // si en el css visivility: hidden  esta aplicado no lo va a encontrar
 console.log(encabezado.textContent); // este si 
 // Esta forma tambien me trae los espacios en blanco que tenga el texto
 console.log(encabezado.innerHTML);

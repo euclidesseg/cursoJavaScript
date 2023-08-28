@@ -1,0 +1,14 @@
+
+
+push():     Agrega elementos al final del array.
+pop():      Elimina y devuelve el último elemento del array.
+forEach():  recorre todo el arreglo
+map():      usualmente usado para modificar datos del arreglo devuelve otro del mismo tamaño
+filter():   Crea un nuevo array con elementos que cumplen cierta condición.
+find():     Encuentra el primer elemento que cumple con una condición.
+indexOf():  Encuentra el índice del primer elemento el cual le indicamos en su argumento 
+sort():     Ordena los elementos del array.
+reduce():   nos sirbe para unir los datos de un array y multiplicarlos y retornar un solo valor
+slice():    permite corar el arreglo desde un indice a otro
+splice(1,2):   eliminar o reemplazar de entre el arreglo
+concat()   :   une dos arreglos tambien podemos hacerlo de la siguiente manera |||||   carrito4 = [...carrito2, ...carrito]

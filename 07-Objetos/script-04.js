@@ -10,7 +10,7 @@ console.log(producto.Nombre);
 // si quiero asignar ese valor a una propia variable hago lo siguyiente
 // const apodo = producto.Nombre;
 // console.log(`${apodo}`)
-// Ahora esta era la manera antigua de hacerlo gracias a ecmascript ahora lo hacermos con Destructuring
+// Ahora esta era la manera antigua de hacerlo gracias a ecmascript ahora lo hacemos con Destructuring
 
 // Destructuring
 const{Nombre} = producto;

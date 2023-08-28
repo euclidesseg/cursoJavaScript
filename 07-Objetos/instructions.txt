@@ -1,0 +1,32 @@
+
+ OBJETOS
+ ================================================================================
+ // Los objetos son la pieza fundamental de javasctipt 
+ // Agrupan todo en una sola variable 
+ // las variables van dentro y se conocen como propiedad del objeto 
+ // Su sintaxis
+ // la svariables no se igualan con (=) si no con (:)
+  const objeto = {
+    propiedad1: "si",
+    propiedad2: "no"
+  }
+  console.log(objeto);
+  //Destructuring acceder propiedades y agregarlas a una variable
+    const{propiedad1, propiedad2} = producto;
+    console.log(propiedad1);
+
+     METODOS DE LOS OBJETOS
+ ========================
+ 
+ Object.freeze(objeto);    = No me permite modificar eliminar o agregar propiedades a un metodo se activa cuando hacemos uso de "use strict"
+ Object.seal(objeto);      = A diferensia de freeze no se pueden agregar ni eliminar propiedades, pero si se pueden modificar las existenes
+ const resultado2 = {...producto, ...medidas}; = Une dos objetos en una Variable
+
+ console.log(Object.keys(producto));     = Me retorna las propiedades
+ console.log(Object.values(producto));   = Me retorna los valores de las propiedades
+ console.log(Object.entries(producto));  = Me retorna todo lo que tiene el objeto
+ delete producto.imgagen;                = eliminar una propiedad de un objeto
+
+ console.log(`El producto: ${this.Nombre} tiene un precio de: ${this.precio}`);   
+ = la palabra this se usa en funciones dentro de objetos para hacer referencia a una propiedad 
+

@@ -1,0 +1,8 @@
+ OPERADORES
+ ================================================================================
+ //1. ==  comparador de igualdad normal
+ //2. ===  comparador de igualdad estricto
+ //3. !=  comparador diferenncia normal
+ //4. !==  comparador diferenncia estricto
+ //5. >    mayor que
+ //6. <    menor que 

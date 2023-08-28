@@ -30,8 +30,8 @@ const producto3 = {
 
 let resultado;
 resultado = [...carrito, producto,]
-// lo que se hace es, tomar en la variable resultado se pega el arreglo carrito y a ese arreglo se le da el objeto producto y producto2
-// para que sean sus dos indices y para que asi el arreglo siga vacio y no se toca para nada.
+// Se esta creando una nueovo arreglo  que contiene una copia de los elementos de carrito y el objeto producto,
+//  y ese nuevo arreglo  se almacena en la variable resultado.
 
 // tambien puedo indicarle el orden de los elementos de la siguiente manera 
 resultado = [producto2, ...resultado]

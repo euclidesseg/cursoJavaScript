@@ -23,18 +23,18 @@ botonFlotante.addEventListener(`click`, ejecutarFooter)
 function ejecutarFooter() {
     // console.log(`Diste click`);
     // verificar si una clase existe en html
-    if (footer.classList.contains(`activo`)) {
+    if (footer.classList.contains(`activo`)) { //contains verifica si un elemento tiene una clase o no.
         // la primera vez que de clic en el boton no va a estar asi que saltara el else de abajo
         // y la crea
         // laproxima vez que de clik si estara y quitara esa clase
         footer.classList.remove(`activo`);
         botonFlotante.classList.remove(`activo`);
-        this.textContent = `Idioma Y Moneda`
+        this.textContent = `Idioma Y Moneda` //el this se refiere al botonFlotante
     }else{
         footer.classList.add(`activo`);
         botonFlotante.classList.add(`activo`);
         this.textContent = `X Cerrar`
-        // debido a que la funcion esta llamando al boton tambien podemos usar this
+        // debido a que la funcion esta llamando al boton tambien podemos usar this botonFlotante
         // ya que estariamos uzando el llamado de la funcion
     }
 }

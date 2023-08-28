@@ -8,4 +8,4 @@ console.log(`${booleans1 === booleans2}`);
 // Retorara un valor false 
 
 console.log(`${booleans1 === true }`);
-// Retornara un valor true y esta dorma es ideal para traer registros de bases de datos
+// Retornara un valor true y esta forma es ideal para traer registros de bases de datos

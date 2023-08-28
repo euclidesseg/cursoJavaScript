@@ -1,0 +1,20 @@
+
+ ARRAYS O ARREGLOS
+ ==========================================
+ // Los arreglos sirven para agrupar elmentos del mismo tipo
+ // la diferencia entre arreglo y objetos es: los arreglos tienen solo valores y se reconocen porque van entre corchetes
+ // los objetos tienen propiedades y valores, se reconocen porque van entre llaves
+ // Les puedo agregar objetos tambien a los arreglos
+
+ METODOS DE LOS ARREGLOS 
+ =========================
+
+ // meses.push(`abril`) = Agregar un elemento al final de un array
+ // meses.unshift(`primer mes`); = agreagar un elemento al inicio de un arreglo 
+ // En el capitulo 6 de arrays esta la informacion de como agregar elementos a un arreglo con spread operator
+ // carrito.pop();            =  eliminar el ultimo elemento de un arreglo
+ // carrito.shift();           =  eliminar el primer elemento de un arreglo
+ // carrito.splice(1,1);        = eliminar en cualquier posicion de un arreglo
+
+ let [, , tercer] = numeros;    = aplicar destructuring a arreglos numeros hace referencia al nombre del array
+// Exsisten dos formas de iterar un arreglo que contenga objetos con forlup y con forEach en el capitulo 9 de arreglo se ven las dos formas

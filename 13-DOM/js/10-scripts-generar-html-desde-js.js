@@ -14,6 +14,8 @@ enlace.id = `acerca`;
 enlace.target = `_blank`;
 // console.log(enlace)
 
+
+
 // agregando el nuevo elemento al DOM
 // traemos el menu de navegacion donde vamos a crear el nuevo enlace
 let navegacion = document.querySelector(`.navegacion`);
@@ -46,7 +48,7 @@ categoria.classList.add(`categoria`, `concierto`);
 categoria.textContent = `Actividad`;
 
 let titulo = document.createElement(`p`);
-titulo.classList.add(`tutilo`);
+titulo.classList.add(`tutulo`);
 titulo.textContent = (`Programa con los mejores`);
 
 let precio = document.createElement(`p`);
