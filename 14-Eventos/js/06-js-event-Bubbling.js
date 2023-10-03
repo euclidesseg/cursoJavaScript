@@ -7,7 +7,7 @@ let infoDiv = document.querySelector(`.info`)
 let tituloDiv = document.querySelector(`.titulo`)
 
 cardDiv.addEventListener(`click`, (event) => {
-    event.stopPropagation();
+    event.stopPropagation(); // esto me detiene la propagacion
     console.log(`Click en card`);
 })
 infoDiv.addEventListener(`click`, (event) => {

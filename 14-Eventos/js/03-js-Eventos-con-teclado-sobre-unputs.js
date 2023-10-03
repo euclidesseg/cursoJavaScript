@@ -12,9 +12,9 @@ const busqueda = document.querySelector(`.busqueda`);
 
 
 // // keyup para ejecutarse cuando se preciona y se suelta una tecla
-// busqueda.addEventListener(`keyup`, () => {
-//     console.log(`Acabas de soltar la tecla del teclado`);
-// });
+busqueda.addEventListener(`keyup`, () => {
+    console.log(`Acabas de soltar la tecla del teclado`);
+});
 
 
 // // blur para desencadenar una accion cuando das click fuera del input luego estar escribiendo 

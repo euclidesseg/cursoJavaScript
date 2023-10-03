@@ -18,6 +18,7 @@ window.addEventListener(`scroll`, darScroll);
 function darScroll() {
     let premium = document.querySelector(`.premium`);
     let ubicacion = premium.getBoundingClientRect();
+    console.log(ubicacion);
     console.log(ubicacion.top);
 
     // .getBoundingClientRect();
@@ -26,7 +27,7 @@ function darScroll() {
     // height:448       // la altura de ese elemento
     // left:44         // a cuanto del eje izquierdo esta
     // right:1144      // a cuanto del eje detrecho eta
-    // top:73.15625
+    // top:73.15625    // representa la distancia desde el borde superior del viewport
     // width:1100      // el ancho de ese elemento
     // x:44            // las cordenadas del elemento en x
     // y:73.15625      // las cordenadas del elemento en y
