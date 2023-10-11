@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito De Compras</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+</head>
+
+<body>
+    <main>
+        <nav class="container-nav">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <p class="nav-buscar-curso">Busca Un Curso</p>
+                </li>
+                <li class="nav-item">
+                    <input type="text" placeholder="BUSCAR" class="header-button">
+                </li>
+                <li class="nav-item submenu">
+                    <a class="nav-link disabled"> <img src="/assets/img/fcar_buy.svg" alt=""></a>
+                    <div id="carrito">
+                        <table class="list-car" id="lista-carrito">
+                            <thead style="position: relative;">
+                                <tr class="encabezadoListaCarrito">
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                
+                            </tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn__variar__carrito">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="fondo">
+
+        </div>
+        <h1 class="infoCursos">Cursos En Linea</h1>
+
+        <div class="cards_container" id="lista-cursos">
+            <div class="card">
+                <img id="img-curso" src="/assets/img/curso1.jpg" alt="" class="img-curso ">
+                <div class="info-card">
+                    <h4 class="card-title" id="titulo-curso">HTML5, CSS3, JavaScript para Principiantes</h4>
+                    <p>Anderson Yepes</p>
+                    <img id="idEstrellas" src="/assets/img/estrellas.png">
+                    <p class="precio"><span class="precioOriginal">$200000</span><span class="precioNuevo">$90000</span>
+                    </p>
+                    <a href="#" class="agregar-carrito" data-id="1"> <span class="span-btn"></span> Agregar
+                        Al Carrito</a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="img-curso" src="/assets/img/robotica.jpg" alt="" class="img-curso">
+                <div class="info-card">
+                    <h4 class="card-title" id="titulo-curso">Inteligencia Artificial </h4>
+                    <p>Anderson Yepes</p>
+                    <img id="idEstrellas" src="/assets/img/estrellas.png">
+                    <p class="precio"><span class="precioOriginal">$200000</span><span
+                            class="precioNuevo">$200000</span></p>
+
+                    <a href="#" class="agregar-carrito" data-id="2"> <span class="span-btn"></span> Agregar
+                        Al Carrito</a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="img-curso" src="/assets/img/java.jpg" alt="" class="img-curso">
+                <div class="info-card">
+                    <h4 class="card-title" id="titulo-curso">JAVA Programacion Orientada a Objetos (POO)</h4>
+                    <p>Euclides Perez</p>
+                    <img id="idEstrellas" src="/assets/img/estrellas.png">
+                    <p class="precio"><span class="precioOriginal">$200000</span><span
+                            class="precioNuevo">$200000</span></p>
+
+                    <a href="#" class="agregar-carrito" data-id="3"> <span class="span-btn"></span> Agregar
+                        Al Carrito</a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="img-curso" src="/assets/img/python.jpg" alt="" class="img-curso">
+                <div class="info-card">
+                    <h4 class="card-title" id="titulo-curso">Python Desde 0</h4>
+                    <p>Anderson Yepes</p>
+                    <img id="idEstrellas" src="/assets/img/estrellas.png">
+                    <p class="precio"><span class="precioOriginal">$200000</span><span
+                            class="precioNuevo">$200000</span></p>
+                    <a href="#" class="agregar-carrito" data-id="4"> <span class="span-btn"></span> Agregar
+                        Al Carrito</a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="img-curso" src="/assets/img/dart.jpg" alt="" class="img-curso">
+                <div class="info-card">
+                    <h4 class="card-title" id="titulo-curso">Programacion de App Moviles con Dart y Flutter</h4>
+                    <p>Euclides Perez</p>
+                    <img id="idEstrellas" src="/assets/img/estrellas.png">
+                    <p class="precio"><span class="precioOriginal">$200000</span><span
+                            class="precioNuevo">$200000</span></p>
+
+                    <a href="#" class="agregar-carrito" data-id="5"> <span class="span-btn"></span> Agregar
+                        Al Carrito</a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="img-curso" src="/assets/img/javascript.jpg" alt="" class="img-curso">
+                <div class="info-card">
+                    <h4 class="card-title" id="titulo-curso">JavaScript Avanzado</h4>
+                    <p>Anderson Yepes</p>
+                    <img id="idEstrellas" src="/assets/img/estrellas.png">
+                    <p class="precio"><span class="precioOriginal">$200000</span><span
+                            class="precioNuevo">$200000</span></p>
+
+                    <a href="#" class="agregar-carrito" data-id="6"> <span class="span-btn"></span> Agregar
+                        Al Carrito</a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="img-curso" src="/assets/img/kotlin.png" alt="" class="img-curso">
+                <div class="info-card">
+                    <h4 class="card-title" id="titulo-curso">Programacion de App Moviles con Kotlin</h4>
+                    <p>Anderson Yepes</p>
+                    <img id="idEstrellas" src="/assets/img/estrellas.png">
+                    <p class="precio"><span class="precioOriginal">$200000</span><span
+                            class="precioNuevo">$200000</span></p>
+
+                    <a href="#" class="agregar-carrito" data-id="7"> <span class="span-btn"></span> Agregar
+                        Al Carrito</a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="img-curso" src="/assets/img/spring_boot.png" alt="" class="img-curso">
+                <div class="info-card">
+                    <h4 class="card-title" id="titulo-curso">Apis Rest con SprintBoot</h4>
+                    <p>Euclides Perez</p>
+                    <img id="idEstrellas" src="/assets/img/estrellas.png">
+                    <p class="precio"><span class="precioOriginal">$200000</span><span
+                            class="precioNuevo">$200000</span></p>
+                    <a href="#" class="agregar-carrito" data-id="8"> <span class="span-btn"></span> Agregar
+                        Al Carrito</a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="img-curso" src="/assets/img/angular-15.webp" alt="" class="img-curso">
+                <div class="info-card">
+                    <h4 class="card-title" id="titulo-curso">Curso Angular desde 0</h4>
+                    <p>Euclides Perez</p>
+                    <img id="idEstrellas" src="/assets/img/estrellas.png">
+                    <p class="precio"><span class="precioOriginal">$200000</span><span
+                            class="precioNuevo">$200000</span></p>
+                    <a href="#" class="agregar-carrito" data-id="9"> <span class="span-btn"></span> Agregar
+                        Al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <form action="" class="footer-form">
+            <label for="mail" class="footer-lbl">Ingresa tu Email para enviarte noticias</label>
+            <input type="text" placeholder="enter your email" id="mail" name="mail">
+            <input type="button" value="ENVIAR" id="footer-button">
+        </form>
+        <div class="companys">
+            <img src="/assets/img/logo.png" alt="" class="img-for">
+        </div>
+        <div class="footer-info">
+            <div class="col-1">
+                <h4 class="h1-titulo">APLICACIONES</h4>
+                <li class="footer-list">Escritorios</li>
+                <li class="footer-list">Moviles</li>
+                <li class="footer-list">Web</li>
+                <li class="footer-list">Inteligencia Artificial</li>
+            </div>
+            <div class="col-1">
+                <h4 class="h1-titulo">COMPAÑIAS</h4>
+                <li class="footer-list">VisionApp</li>
+                <li class="footer-list">Ivi</li>
+            </div>
+            <div class="col-1">
+                <h4 class="h1-titulo">REDES</h4>
+                <li class="footer-list">Facebook</li>
+                <li class="footer-list">Twiter</li>
+                <li class="footer-list">Youtube</li>
+            </div>
+        </div>
+
+        <div class="companys ivi">
+            <img src="/assets/img/ivis.png" alt="" class="img-for1">
+        </div>
+    </footer>
+    <script src="/js/js1.js"></script>
+</body>
+
+</html>
