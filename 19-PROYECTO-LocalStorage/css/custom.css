@@ -27,13 +27,28 @@ h1, h2 {
     margin: 0 auto;
     color: white;
 }
+.success {
+    width: auto;
+    min-width: 50%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(14, 202, 55);
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+}
 .tweet{
     height: 50px;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: auto;
     gap: 10px;
     text-align: center;
 }
