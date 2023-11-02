@@ -50,10 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
             },3000)
         },3000)
     }
-
-    function mostrarAlerta(){
-
-    }
     function validar(event) {
         //aplico tecnica de traversing the DOM recorrer el DOM
         const parentElement = event.target.parentElement;
