@@ -43,6 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(tweetObject);
         console.table(tweets);
         mostrarTweets(tweets)
+
+        agregarLocalStorage(tweets);
+
         mostrarAlerta(false, formulario);
         setTimeout(() => {
            borrarAlerta(formulario); 
@@ -104,11 +107,18 @@ document.addEventListener("DOMContentLoaded", () => {
         if(event.target.classList.contains("borrar-tweet")){
             console.log("eliminando tweet");
             id = event.target.getAttribute("data-id");
-            tweets = JSON.parse(localStorage.getItem("tweets"))
             tweets = tweets.filter((tweet) => tweet.id != id)
-            localStorage.setItem("tweets", JSON.stringify(tweets))
+            agregarLocalStorage(tweets)
             mostrarTweets(tweets);
         }
+    }
+
+    function agregarLocalStorage(tweets){
+        if(!tweets.length){
+            localStorage.clear();
+            return
+        }
+        localStorage.setItem("tweets", JSON.stringify(tweets))
     }
 
     const limpiarHtml = () => {
