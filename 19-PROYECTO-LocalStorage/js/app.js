@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
 
         const tweet = document.querySelector("#tweet").value;
-        if (tweet < 5 || tweet === ""){
+        if (tweet.length < 5 || tweet === ""){
             mostrarAlerta(true, formulario);
             return;
         }
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mostrarTweets(tweets)
 
         agregarLocalStorage(tweets);
+        formulario.reset();
 
         mostrarAlerta(false, formulario);
         setTimeout(() => {
