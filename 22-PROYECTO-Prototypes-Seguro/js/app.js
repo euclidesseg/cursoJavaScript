@@ -79,6 +79,47 @@ UI.prototype.mostrarMensaje = function (mensaje, tipo) { // tipo puede ser de ti
     }, 3000);
 }
 
+
+UI.prototype.mostrarResultado = (seguro, total) =>{
+    // crear resultado 
+
+    const {marca, year, tipo} = seguro;
+    let tipo_texto;
+
+    switch(marca.toString()){
+        case '1':
+            tipo_texto = 'Americano'
+            break;
+        case '2':
+            tipo_texto = 'Asiatico'
+            break;
+        case '3':
+            tipo_texto = 'Europeo'
+            break;
+        default:
+            break;
+    }
+    const div = document.createElement("DIV")
+    div.classList.add("mt-10");
+    div.innerHTML = `
+        <p class = "header"> Tu resumen </p>
+        <p class = "font-bold">Marca: <span class = "font-normal">${tipo_texto} </span> </p>
+        <p class = "font-bold">Año:  <span class = "font-normal">${year} </span>  </p>
+        <p class = "font-bold">Tipo:  <span class = "font-normal">${tipo} </span>  </p>
+        <p class = "font-bold">Total: <span class = "font-normal">${total} </span>   </p>
+
+    `
+    const resultadoDiv = document.querySelector("#resultado");
+    
+    //mostrar el spinner
+    const spinner = document.querySelector("#cargando");
+    spinner.style.display = 'block'
+    setTimeout(() => {
+        spinner.style.display = 'none' // se borra el spinner 
+        resultadoDiv.appendChild(div); // y se muestra el resultado
+    }, 3000);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // instanciar UI
     const ui = new UI();
@@ -110,10 +151,13 @@ function cotizarSeguro(event) {
         ui.mostrarMensaje("Todos los campos son obligatorios", "error");
         return;
     }
-    ui.mostrarMensaje("cotizando", "exito");
+    ui.mostrarMensaje("cotizando...", "exito");
 
+    // ocultar cotizaciones previas cuando hacemos una nueva cotizacion
+    const resultados2 = document.querySelector("#resultado");
+    if(resultados2.firstChild) resultados2.firstChild.remove();
 
     //instanciar el seguro
     const seguro = new Seguro(marca, year, tipo);
-    seguro.cotizarSeguro();
+    ui.mostrarResultado(seguro,seguro.cotizarSeguro());
 }
