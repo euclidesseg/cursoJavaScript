@@ -24,14 +24,12 @@ class Presupuesto {
 
     agregarNuevoGasto(gasto){
         this.gastos = [...this.gastos, gasto]
-        console.log(this.gastos);
     }
 }
 
 // mostrara toda la interfaz de presupuesto
 class UI {
     insertarPresupuesto(objPresupuesto) {
-        console.log(objPresupuesto);
         const { presupuesto, restante } = objPresupuesto;
         document.querySelector('#total').textContent = presupuesto
         document.querySelector('#restante').textContent = restante
@@ -56,6 +54,35 @@ class UI {
         setTimeout(() => {
             divMensaje.remove()
         }, 3000);
+    }
+
+    agregarGastoslistado(gastos = []){
+        // limpirar el html para que no se repitan los items
+        while(gastoListado.firstChild){
+            gastoListado.removeChild(gastoListado.firstChild)
+        }
+        // iterar sobre los gastos para mostrarlos en el html
+        gastos.forEach( gasto =>{
+
+            const{nombre, cantidad, id} = gasto;
+            // crear un li
+            const nuevoGasto = document.createElement('LI');
+            nuevoGasto.className = 'list-group-item d-flex justify-content-between align-items-center';
+            nuevoGasto.setAttribute('data-id',id);
+            nuevoGasto.dataset.id = id;
+
+            // agregar el html del gasto
+            nuevoGasto.innerHTML = `${nombre} <span class = "badge badge-primary badge-pill"> ${cantidad}</span>`
+
+            // boton para borrar el gasto
+            const btnBorrar = document.createElement('button');
+            btnBorrar.classList.add('btn', 'btn-danger', 'borrar-gasto');
+            btnBorrar.textContent = "Borrar"
+            nuevoGasto.appendChild(btnBorrar);
+
+            // agregar al listado
+            gastoListado.appendChild(nuevoGasto);
+        })
     }
 }
 
@@ -85,6 +112,7 @@ function agregarGasto(event) {
     // validar
     if (nombre === "" || cantidad === "") {
         ui.imprimirAlerta('Ambos campos son obligatorios', 'error');
+        return;
     } else if (cantidad <= 0 || isNaN(cantidad)) {
         ui.imprimirAlerta('Cantidad no valida', 'error')
         return 
@@ -101,6 +129,9 @@ function agregarGasto(event) {
 
     // imprimir los gastos en el html
     const {gastos} = presupuesto
+
+    
+    ui.agregarGastoslistado(gastos);
     // reinicia el formulario
     formulario.reset()
 }
