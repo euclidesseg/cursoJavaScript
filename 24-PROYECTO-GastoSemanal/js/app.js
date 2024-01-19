@@ -24,6 +24,12 @@ class Presupuesto {
 
     agregarNuevoGasto(gasto){
         this.gastos = [...this.gastos, gasto]
+        this.calcularRestante();
+    }
+
+    calcularRestante(){
+        const gastado = this.gastos.reduce((acumulador, gastoActual) => acumulador + gastoActual.cantidad, 0);
+        this.restante = this.presupuesto - gastado;
     }
 }
 
@@ -72,7 +78,7 @@ class UI {
             nuevoGasto.dataset.id = id;
 
             // agregar el html del gasto
-            nuevoGasto.innerHTML = `${nombre} <span class = "badge badge-primary badge-pill"> ${cantidad}</span>`
+            nuevoGasto.innerHTML = `${nombre} <span class = "badge badge-primary badge-pill"> $ ${cantidad}</span>`
 
             // boton para borrar el gasto
             const btnBorrar = document.createElement('button');
@@ -83,6 +89,24 @@ class UI {
             // agregar al listado
             gastoListado.appendChild(nuevoGasto);
         })
+
+         presupuesto.calcularRestante();
+            
+        
+    }
+    actualizarRestante(restante){
+        document.querySelector('#restante').textContent = restante
+    }
+    comprobarPresupuesto(presupuestoObj){
+        const {presupuesto, restante}= presupuestoObj;
+
+        if(restante < (presupuesto / 4)){
+            document.querySelector('.restante').classList.remove("alert-success")
+            document.querySelector('.restante').classList.add("alert-danger")
+        }else if(restante > (presupuesto / 4)){
+            document.querySelector('.restante').classList.remove("alert-success")
+            document.querySelector('.restante').classList.add("alert-warning")
+        }
     }
 }
 
@@ -128,10 +152,14 @@ function agregarGasto(event) {
     ui.imprimirAlerta('Gasto Agregado', 'success');
 
     // imprimir los gastos en el html
-    const {gastos} = presupuesto
+    const {gastos, restante} = presupuesto
 
-    
+    ui.actualizarRestante(restante)
+    ui.comprobarPresupuesto(presupuesto);
     ui.agregarGastoslistado(gastos);
     // reinicia el formulario
     formulario.reset()
+
+    //restar restante
+    ui.insertarPresupuesto()
 }
