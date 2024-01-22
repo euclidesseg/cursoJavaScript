@@ -22,14 +22,23 @@ class Presupuesto {
         this.gastos = []; // arreglo para almacenar todos los gastos a medida que vamos agregando
     }
 
-    agregarNuevoGasto(gasto){
+    agregarNuevoGasto(gasto) {
         this.gastos = [...this.gastos, gasto]
         this.calcularRestante();
     }
 
-    calcularRestante(){
+    calcularRestante() {
         const gastado = this.gastos.reduce((acumulador, gastoActual) => acumulador + gastoActual.cantidad, 0);
         this.restante = this.presupuesto - gastado;
+    }
+
+    eliminarGasto(id) {
+        this.gastos = this.gastos.filter( gasto => {
+            return gasto.id !== id;
+        })
+        ui.agregarGastoslistado(this.gastos);
+        ui.actualizarRestante(this.restante)
+        ui.comprobarPresupuesto({presupuesto: this.presupuesto, restante: this.restante});
     }
 }
 
@@ -62,19 +71,19 @@ class UI {
         }, 3000);
     }
 
-    agregarGastoslistado(gastos = []){
+    agregarGastoslistado(gastos = []) {
         // limpirar el html para que no se repitan los items
-        while(gastoListado.firstChild){
+        while (gastoListado.firstChild) {
             gastoListado.removeChild(gastoListado.firstChild)
         }
         // iterar sobre los gastos para mostrarlos en el html
-        gastos.forEach( gasto =>{
+        gastos.forEach(gasto => {
 
-            const{nombre, cantidad, id} = gasto;
+            const { nombre, cantidad, id } = gasto;
             // crear un li
             const nuevoGasto = document.createElement('LI');
             nuevoGasto.className = 'list-group-item d-flex justify-content-between align-items-center';
-            nuevoGasto.setAttribute('data-id',id);
+            nuevoGasto.setAttribute('data-id', id);
             nuevoGasto.dataset.id = id;
 
             // agregar el html del gasto
@@ -84,35 +93,56 @@ class UI {
             const btnBorrar = document.createElement('button');
             btnBorrar.classList.add('btn', 'btn-danger', 'borrar-gasto');
             btnBorrar.textContent = "Borrar"
+
+            btnBorrar.onclick = () => {
+                presupuesto.eliminarGasto(id);
+            }
             nuevoGasto.appendChild(btnBorrar);
 
             // agregar al listado
             gastoListado.appendChild(nuevoGasto);
         })
 
-         presupuesto.calcularRestante();
-            
-        
+        presupuesto.calcularRestante();
+
+
     }
-    actualizarRestante(restante){
+    actualizarRestante(restante) {
         document.querySelector('#restante').textContent = restante
     }
-    comprobarPresupuesto(presupuestoObj){
-        const {presupuesto, restante}= presupuestoObj;
+    comprobarPresupuesto(presupuestoObj) {
+        const { presupuesto, restante } = presupuestoObj;
 
-        if(restante < (presupuesto / 4)){
+        if (restante < (presupuesto / 4)) {
             document.querySelector('.restante').classList.remove("alert-success")
             document.querySelector('.restante').classList.add("alert-danger")
-        }else if(restante > (presupuesto / 4)){
+        } else if (restante < (presupuesto / 2)) {
             document.querySelector('.restante').classList.remove("alert-success")
             document.querySelector('.restante').classList.add("alert-warning")
+        }else{
+            document.querySelector('.restante').classList.remove('alert-warning', 'alert-danger')
+            document.querySelector('.restante').classList.add("alert-success")
+            formulario.querySelector('button[type="submit"]').disabled = false;
+
+        }
+
+
+        if (restante <= 0) {
+            ui.imprimirAlerta('El presupuesto se ha agotado', 'error');
+
+            formulario.querySelector('button[type="submit"]').disabled = true;
         }
     }
 }
 
+
+
 // instancias de clases
 let ui = new UI();
 let presupuesto;
+
+
+
 
 // funciones
 function preguntarPresupuesto() {
@@ -124,6 +154,10 @@ function preguntarPresupuesto() {
     presupuesto = new Presupuesto(presupuestoUsuario);
     ui.insertarPresupuesto(presupuesto);
 }
+
+
+
+
 
 // añade gastos
 function agregarGasto(event) {
@@ -139,11 +173,11 @@ function agregarGasto(event) {
         return;
     } else if (cantidad <= 0 || isNaN(cantidad)) {
         ui.imprimirAlerta('Cantidad no valida', 'error')
-        return 
+        return
     }
 
     //creamos el objeto con el gasto
-    const gasto = {nombre, cantidad, id:Date.now()}
+    const gasto = { nombre, cantidad, id: Date.now() }
 
     // desde lainstancia llamo el metodo agregar gasto
     presupuesto.agregarNuevoGasto(gasto);
@@ -152,7 +186,7 @@ function agregarGasto(event) {
     ui.imprimirAlerta('Gasto Agregado', 'success');
 
     // imprimir los gastos en el html
-    const {gastos, restante} = presupuesto
+    const { gastos, restante } = presupuesto
 
     ui.actualizarRestante(restante)
     ui.comprobarPresupuesto(presupuesto);
@@ -163,3 +197,4 @@ function agregarGasto(event) {
     //restar restante
     ui.insertarPresupuesto()
 }
+
