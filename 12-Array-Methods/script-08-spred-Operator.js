@@ -1,5 +1,8 @@
 // En este capitulo estaremos viendo los diferentes usos de spred operator dentro de un arreglo
-
+/*
+    El spread operator (...) en JavaScript permite "expandir" o "desempaquetar" 
+    elementos de un arreglo u objeto en un nuevo contexto
+*/
 
 let meses = [`enero`, `febrero`, `marzo`, `abril`, `mayo`];
 
@@ -35,6 +38,6 @@ console.table(meses);
 // AHORA VEAMOS COMO USAR SPRED OPERATOR CON ARREGLO DE OBJETOS
 
 let producto = {nombre: `Disco duro`, precio: 300}
-let carrito2 = [...carrito, producto]
+let carrito2 = [...carrito, producto] //...carrito Desempaqueta todos los elementos del arreglo carrito y los coloca en el nuevo arreglo carrito2. Luego agrega el objeto producto como un nuevo elemento al final del arreglo carrito2.
 
 console.table(carrito2);

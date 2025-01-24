@@ -66,6 +66,7 @@ color.addEventListener("change", (e) =>{
 
 //funciones
 const mostrarAutos = (autos) =>{ //muestra autos en html
+    debugger;
     autos.forEach(auto => {
 
         const {marca, modelo, year, puertas, precio, color, transmision} = auto;        
